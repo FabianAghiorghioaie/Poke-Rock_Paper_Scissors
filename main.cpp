@@ -57,7 +57,7 @@ int main()
     float types[19][19];
     for (int j = 1; j < 19; j++)
         for (int i = 1; i < 19; i++)
-            f >> types[i][j];
+            f >> types[j][i];
     int hp[3];
     hp[1] = 100;
     hp[2] = 100;
@@ -91,14 +91,14 @@ int main()
         system("CLS");
         if (attack[1] != 0 && attack[2] != 0)
         {
-            damage[1] = ((20 / types[attack[1]][moves[1][0]]) * types[attack[1]][attack[2]]);
+            damage[1] = ((20 / types[attack[1]][moves[2][0]]) * types[attack[1]][attack[2]]);
             if (random(10) == 10)
             {
                 damage[1] *= 2;
                 cout << "Crit! ";
             }
             cout << damage[1] << " Damage from Player1!" << endl;
-            damage[2] = ((20 / types[attack[2]][moves[2][0]]) * types[attack[2]][attack[1]]);
+            damage[2] = ((20 / types[attack[2]][moves[1][0]]) * types[attack[2]][attack[1]]);
             if (random(10) == 10)
             {
                 damage[2] *= 2;
