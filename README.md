@@ -1,4 +1,4 @@
-# Poke-Rock_Paper_Scissors
+# Poke-Rock-Paper-Scissors
   It's a quick game I wrote while still in high school, combining Pokemon and Rock Paper Scissors.
 
 ## How to play
